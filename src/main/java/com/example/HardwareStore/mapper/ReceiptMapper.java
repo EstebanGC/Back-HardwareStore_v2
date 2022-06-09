@@ -3,7 +3,11 @@ package com.example.HardwareStore.mapper;
 import com.example.HardwareStore.collection.Receipt;
 import com.example.HardwareStore.dto.ReceiptDTO;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
+import org.springframework.web.reactive.config.EnableWebFlux;
 
+@Component
+@EnableWebFlux
 public class ReceiptMapper {
 
     private final ModelMapper modelMapper;

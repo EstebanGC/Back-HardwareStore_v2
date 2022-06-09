@@ -17,7 +17,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 public class DeleteProduct {
 
     @Bean
-    public RouterFunction<ServerResponse> deleteProduct(DeleteProductUseCase deleteProductUseCase){
+    public RouterFunction<ServerResponse> deleteProductRouter(DeleteProductUseCase deleteProductUseCase){
         return route(DELETE("/delete/product/{id}").and(accept(MediaType.APPLICATION_JSON)),
                 request -> deleteProductUseCase.deleteProductById(request.pathVariable("id"))
                         .flatMap(notused -> ServerResponse.status(HttpStatus.ACCEPTED).build()));

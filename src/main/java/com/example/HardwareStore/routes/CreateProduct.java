@@ -17,7 +17,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 public class CreateProduct {
 
     @Bean
-    public RouterFunction<ServerResponse> createProduct(CreateProductUseCase createProductUseCase) {
+    public RouterFunction<ServerResponse> createProductRouter(CreateProductUseCase createProductUseCase) {
         return route(POST("/create/product").and(accept(MediaType.APPLICATION_JSON)),
                 request -> request.bodyToMono(ProductDTO.class)
                         .flatMap(createProductUseCase::createProduct)

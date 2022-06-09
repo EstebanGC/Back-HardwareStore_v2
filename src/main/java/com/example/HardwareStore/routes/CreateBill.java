@@ -1,6 +1,5 @@
 package com.example.HardwareStore.routes;
 
-
 import com.example.HardwareStore.dto.BillDTO;
 import com.example.HardwareStore.usecases.CreateBillUseCase;
 import org.springframework.context.annotation.Bean;
@@ -18,14 +17,12 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 public class CreateBill {
 
     @Bean
-
-    public RouterFunction<ServerResponse> createBill(CreateBillUseCase createBillUseCase){
+    public RouterFunction<ServerResponse> createBillRouter(CreateBillUseCase createBillUseCase){
         return route(POST("/create/bill").and(accept(MediaType.APPLICATION_JSON)),
                 request -> request.bodyToMono(BillDTO.class)
                         .flatMap(createBillUseCase::createBill)
                         .flatMap(billDTO -> ServerResponse.status(HttpStatus.CREATED)
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .bodyValue(billDTO)));
-
     }
 }

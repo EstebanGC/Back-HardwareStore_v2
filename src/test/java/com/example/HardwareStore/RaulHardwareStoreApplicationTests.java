@@ -9,5 +9,4 @@ class RaulHardwareStoreApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

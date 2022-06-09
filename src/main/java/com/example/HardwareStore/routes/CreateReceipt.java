@@ -24,7 +24,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 public class CreateReceipt {
 
     @Bean
-    public RouterFunction<ServerResponse> createReceipt(CreateReceiptUseCase createReceiptUseCase) {
+    public RouterFunction<ServerResponse> createReceiptRouter(CreateReceiptUseCase createReceiptUseCase) {
         return route(POST("/create/receipt").and(accept(MediaType.APPLICATION_JSON)),
                 request -> request.bodyToMono(ReceiptDTO.class)
                         .flatMap(createReceiptUseCase::createReceipt)
