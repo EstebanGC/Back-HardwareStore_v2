@@ -18,7 +18,7 @@ public class CreateProduct {
 
     @Bean
     public RouterFunction<ServerResponse> createProduct(CreateProductUseCase createProductUseCase) {
-        return route(POST("/store-api/create-product").and(accept(MediaType.APPLICATION_JSON)),
+        return route(POST("/create/product").and(accept(MediaType.APPLICATION_JSON)),
                 request -> request.bodyToMono(ProductDTO.class)
                         .flatMap(createProductUseCase::createProduct)
                         .flatMap(productDTO -> ServerResponse.status(HttpStatus.CREATED)

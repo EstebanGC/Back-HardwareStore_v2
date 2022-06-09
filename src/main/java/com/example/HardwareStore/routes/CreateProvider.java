@@ -18,7 +18,7 @@ public class CreateProvider {
 
     @Bean
     public RouterFunction<ServerResponse> createProvider(CreateProviderUseCase createProviderUseCase){
-        return route(POST("/store-api/create-provider").and(accept(MediaType.APPLICATION_JSON)),
+        return route(POST("/create/provider").and(accept(MediaType.APPLICATION_JSON)),
                 request -> request.bodyToMono(ProviderDTO.class)
                         .flatMap(createProviderUseCase::createProvider)
                         .flatMap(providerDTO -> ServerResponse.status(HttpStatus.CREATED)

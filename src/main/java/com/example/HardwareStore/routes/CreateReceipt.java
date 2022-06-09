@@ -25,7 +25,7 @@ public class CreateReceipt {
 
     @Bean
     public RouterFunction<ServerResponse> createReceipt(CreateReceiptUseCase createReceiptUseCase) {
-        return route(POST("/store-api/create-receipt").and(accept(MediaType.APPLICATION_JSON)),
+        return route(POST("/create/receipt").and(accept(MediaType.APPLICATION_JSON)),
                 request -> request.bodyToMono(ReceiptDTO.class)
                         .flatMap(createReceiptUseCase::createReceipt)
                         .flatMap(providerDTO -> ServerResponse.status(HttpStatus.CREATED)

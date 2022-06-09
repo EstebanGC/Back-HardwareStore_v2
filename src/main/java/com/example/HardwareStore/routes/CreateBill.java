@@ -20,7 +20,7 @@ public class CreateBill {
     @Bean
 
     public RouterFunction<ServerResponse> createBill(CreateBillUseCase createBillUseCase){
-        return route(POST("/store-api/create-bill").and(accept(MediaType.APPLICATION_JSON)),
+        return route(POST("/create/bill").and(accept(MediaType.APPLICATION_JSON)),
                 request -> request.bodyToMono(BillDTO.class)
                         .flatMap(createBillUseCase::createBill)
                         .flatMap(billDTO -> ServerResponse.status(HttpStatus.CREATED)
