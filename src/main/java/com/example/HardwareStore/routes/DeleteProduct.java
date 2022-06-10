@@ -1,6 +1,5 @@
 package com.example.HardwareStore.routes;
 
-import com.example.HardwareStore.dto.ProductDTO;
 import com.example.HardwareStore.usecases.DeleteProductUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
