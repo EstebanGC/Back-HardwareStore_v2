@@ -13,7 +13,8 @@ public class BillDTO {
     private String id;
     private String clientName;
     private String sellerName;
-    private List<Product> productList;
+    private List<Product> productsSold;
     private Integer totalSale;
+
 }
 

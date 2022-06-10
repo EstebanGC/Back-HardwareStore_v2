@@ -13,9 +13,9 @@ public class Bill {
 
     @Id
     private String id;
-    private LocalDate date;
+    private String date;
     private String clientName;
     private String sellerName;
-    private List<Product> productList;
+    private List<Product> productsSold;
     private Integer totalSale;
 }
