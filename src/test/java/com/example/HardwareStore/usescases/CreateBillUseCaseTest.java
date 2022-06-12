@@ -4,6 +4,8 @@ import com.example.HardwareStore.collection.Bill;
 import com.example.HardwareStore.dto.BillDTO;
 import com.example.HardwareStore.repository.BillRepository;
 import com.example.HardwareStore.usecases.CreateBillUseCase;
+import com.example.HardwareStore.usecases.GetAllBillsUseCase;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -37,8 +39,5 @@ public class CreateBillUseCaseTest {
         billDTO.setClientName(bill.getClientName());
         billDTO.setSellerName(bill.getSellerName());
         billDTO.setTotalSale(bill.getTotalSale());
-
-
-
     }
 }
