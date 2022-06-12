@@ -10,11 +10,15 @@ import java.time.LocalDate;
 public class ReceiptDTO {
 
     private String id;
-    private String providerName;
+    private String providers;
     private Integer units;
     private String productId;
     private String date;
-    private Provider provider;
+
+    public ReceiptDTO(){
+
+    }
+
 }
 
 
