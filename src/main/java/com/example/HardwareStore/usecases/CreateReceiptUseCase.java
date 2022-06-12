@@ -10,7 +10,8 @@ import reactor.core.publisher.Mono;
 
 @Service
 @AllArgsConstructor
-public class CreateReceiptUseCase {
+public class
+CreateReceiptUseCase {
 
     private final ReceiptRepository receiptRepository;
     private final ReceiptMapper receiptMapper;

@@ -24,3 +24,4 @@ public class Product {
     private Integer availableUnits;
     private String providers;
 }
+

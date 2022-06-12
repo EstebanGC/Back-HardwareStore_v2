@@ -22,6 +22,10 @@ public class ProductDTO {
     private Integer availableUnits;
     private String providers;
 
+    public ProductDTO() {
+
+    }
+
 }
 
 
