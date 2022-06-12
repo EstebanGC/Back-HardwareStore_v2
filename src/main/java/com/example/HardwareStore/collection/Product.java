@@ -18,5 +18,5 @@ public class Product {
     private Integer minUnits;
     private Integer maxUnits;
     private Integer availableUnits;
-    private Provider providers;
+    private String providers;
 }
