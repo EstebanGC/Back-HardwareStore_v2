@@ -2,7 +2,6 @@ package com.example.HardwareStore.repository;
 
 
 import com.example.HardwareStore.collection.Receipt;
-import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 
