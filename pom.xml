@@ -57,16 +57,6 @@
 			<version>1.4.3</version>
 		</dependency>
 		<dependency>
-<<<<<<< HEAD
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-dependencies</artifactId>
-			<version>${spring-cloud.version}</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-		<dependency>
-=======
->>>>>>> fc2bb715b47964f86ec4902d04f5a1f6cf0c96dc
 			<groupId>io.github.classgraph</groupId>
 			<artifactId>classgraph</artifactId>
 			<version>4.8.139</version>
