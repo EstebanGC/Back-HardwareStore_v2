@@ -1,6 +1,8 @@
 package com.example.HardwareStore.usescases;
 
 
+import com.example.HardwareStore.collection.Product;
+import com.example.HardwareStore.collection.Provider;
 import com.example.HardwareStore.collection.Receipt;
 import com.example.HardwareStore.dto.ReceiptDTO;
 import com.example.HardwareStore.mapper.ReceiptMapper;
@@ -33,21 +35,54 @@ public class GetAllReceiptsUseCaseTest {
 
     @Test
     void getReceiptUseCase(){
+        Provider provider = new Provider(
+                "w",
+                "w",
+                "w",
+                "w"
+        );
 
+        Provider provider1 = new Provider(
+                "n",
+                "n",
+                "n",
+                "n"
+        );
+
+        Product product = new Product(
+                "a",
+                "a",
+                150.2,
+                "a",
+                0,
+                0,
+                20,
+                50,
+                provider
+        );
+        Product product1 = new Product(
+                "b",
+                "b",
+                150.2,
+                "b",
+                0,
+                0,
+                20,
+                50,
+                provider
+        );
         Receipt receipt = new Receipt(
                 "x",
-                "x",
                 3,
-                "x",
+                product,
                 "x"
         );
 
         Receipt receipt1 = new Receipt(
-                "y",
-                "y",
-                7,
-                "y",
-                "y"
+                "idReceipt2",
+                10,
+                product1,
+                "12/06/22"
         );
 
         Mockito.when(receiptRepository.findAll()).thenReturn(Flux.just(receipt,receipt1));

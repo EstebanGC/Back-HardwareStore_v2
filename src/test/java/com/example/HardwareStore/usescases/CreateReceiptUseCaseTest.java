@@ -1,6 +1,7 @@
 package com.example.HardwareStore.usescases;
 
 import com.example.HardwareStore.collection.Product;
+import com.example.HardwareStore.collection.Provider;
 import com.example.HardwareStore.collection.Receipt;
 import com.example.HardwareStore.dto.ProductDTO;
 import com.example.HardwareStore.dto.ReceiptDTO;
@@ -28,11 +29,40 @@ class CreateReceiptUseCaseTest {
     @Test
     public void createReceiptTest(){
 
+        Provider provider = new Provider(
+                "w",
+                "w",
+                "w",
+                "w"
+        );
+
+        Product product = new Product(
+                "a",
+                "a",
+                150.2,
+                "a",
+                0,
+                0,
+                20,
+                50,
+                provider
+        );
+        Product product1 = new Product(
+                "b",
+                "b",
+                150.2,
+                "b",
+                0,
+                0,
+                20,
+                50,
+                provider
+        );
+
         Receipt receipt = new Receipt(
                 "x",
-                "x",
                 5,
-                "x",
+                product1,
                 "x"
         );
 

@@ -15,9 +15,8 @@ public class Receipt {
 
     @Id
     private String id;
-    private String providers;
     private Integer units;
-    private String productId;
+    private Product product;
     private String date;
 
 }

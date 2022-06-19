@@ -24,8 +24,8 @@ public class DeleteReceipt {
 
     @Bean
 
-    @RouterOperation(operation = @Operation(description = "Delete receipt ", operationId = "deleteReceipt", tags = "Receipt",
-            responses = @ApiResponse(responseCode = "200", content = @Content(schema = @Schema(implementation = ProductDTO.class)))))
+    /*@RouterOperation(operation = @Operation(description = "Delete receipt ", operationId = "deleteReceipt", tags = "Receipt",
+            responses = @ApiResponse(responseCode = "200", content = @Content(schema = @Schema(implementation = ProductDTO.class)))))*/
 
 
     public RouterFunction<ServerResponse> deleteReceiptRouter(DeleteReceiptUseCase deleteReceiptUseCase){

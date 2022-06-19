@@ -1,6 +1,7 @@
 package com.example.HardwareStore.usescases;
 
 import com.example.HardwareStore.collection.Product;
+import com.example.HardwareStore.collection.Provider;
 import com.example.HardwareStore.dto.BillDTO;
 import com.example.HardwareStore.dto.ProductDTO;
 import com.example.HardwareStore.mapper.ProductMapper;
@@ -34,15 +35,30 @@ public class GetAllProductsUsecaseTest {
 
     @Test
     void getProductsUseCase() {
+
+        Provider provider = new Provider(
+                "w",
+                "w",
+                "w",
+                "w"
+        );
+
+        Provider provider1 = new Provider(
+                "v",
+                "v",
+                "v",
+                "v"
+        );
         Product product = new Product (
                 "x",
                 "x",
                 4.2,
                 "x",
+                2,
                 4,
                 20,
                 8,
-                "x"
+                provider
         );
 
         Product product1 = new Product(
@@ -50,10 +66,11 @@ public class GetAllProductsUsecaseTest {
                 "y",
                 3.5,
                 "y",
+                2,
                 5,
                 19,
                 7,
-                "y"
+                provider1
         );
 
         Mockito.when(productRepository.findAll()).thenReturn(Flux.just(product,product1));

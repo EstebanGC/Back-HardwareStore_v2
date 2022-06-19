@@ -12,7 +12,7 @@ import java.time.LocalDate;
 public class ReceiptDTO {
 
     private String id;
-    private String providers;
+    private Provider providers;
     private Integer units;
     private String productId;
     private String date;

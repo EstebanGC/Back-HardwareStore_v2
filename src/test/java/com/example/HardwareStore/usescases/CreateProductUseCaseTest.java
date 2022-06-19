@@ -28,15 +28,23 @@ class CreateProductUseCaseTest {
     @Test
     public void createProviderTest(){
 
+        Provider provider = new Provider(
+                "w",
+                "w",
+                "w",
+                "w"
+        );
+
         Product product = new Product(
                 "x",
                 "x",
                 4.2,
                 "x",
+                1,
                 4,
                 20,
                 8,
-                "x"
+                provider
         );
 
         ProductDTO productDTO = new ProductDTO();

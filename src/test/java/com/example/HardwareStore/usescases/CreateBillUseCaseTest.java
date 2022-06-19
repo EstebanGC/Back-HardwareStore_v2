@@ -28,7 +28,7 @@ public class CreateBillUseCaseTest {
                 "X",
                 "X",
                 "X",
-                 7,
+                7,
                 100
         );
 

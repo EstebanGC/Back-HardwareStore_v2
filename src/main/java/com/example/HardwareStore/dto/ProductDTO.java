@@ -20,7 +20,7 @@ public class ProductDTO {
     private Integer minUnits;
     private Integer maxUnits;
     private Integer availableUnits;
-    private String providers;
+    private Provider providers;
 
     public ProductDTO() {
 
