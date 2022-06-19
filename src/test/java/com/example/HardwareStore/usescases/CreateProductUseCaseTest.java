@@ -33,6 +33,7 @@ class CreateProductUseCaseTest {
                 "x",
                 4.2,
                 "x",
+                9,
                 4,
                 20,
                 8,
