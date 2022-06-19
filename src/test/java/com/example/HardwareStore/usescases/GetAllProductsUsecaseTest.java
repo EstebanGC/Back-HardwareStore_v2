@@ -54,7 +54,11 @@ public class GetAllProductsUsecaseTest {
                 "x",
                 4.2,
                 "x",
+<<<<<<< HEAD
                 2,
+=======
+                9,
+>>>>>>> fc2bb715b47964f86ec4902d04f5a1f6cf0c96dc
                 4,
                 20,
                 8,
@@ -66,7 +70,11 @@ public class GetAllProductsUsecaseTest {
                 "y",
                 3.5,
                 "y",
+<<<<<<< HEAD
                 2,
+=======
+                8,
+>>>>>>> fc2bb715b47964f86ec4902d04f5a1f6cf0c96dc
                 5,
                 19,
                 7,

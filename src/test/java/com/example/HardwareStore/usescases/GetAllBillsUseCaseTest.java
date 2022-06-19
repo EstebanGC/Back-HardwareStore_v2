@@ -61,5 +61,4 @@ public class GetAllBillsUseCaseTest {
 
         Mockito.verify(billRepository).findAll();
     }
-
 }

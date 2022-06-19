@@ -40,7 +40,11 @@ class CreateProductUseCaseTest {
                 "x",
                 4.2,
                 "x",
+<<<<<<< HEAD
                 1,
+=======
+                9,
+>>>>>>> fc2bb715b47964f86ec4902d04f5a1f6cf0c96dc
                 4,
                 20,
                 8,
