@@ -69,9 +69,9 @@ class CreateReceiptUseCaseTest {
         ReceiptDTO receiptDTO = new ReceiptDTO();
 
         receiptDTO.setId(receiptDTO.getId());
-        receiptDTO.setProviders(receiptDTO.getProviders());
+
         receiptDTO.setUnits(receiptDTO.getUnits());
-        receiptDTO.setProductId(receiptDTO.getProductId());
+        receiptDTO.setProduct(receiptDTO.getProduct());
         receiptDTO.setDate(receiptDTO.getDate());
 
 

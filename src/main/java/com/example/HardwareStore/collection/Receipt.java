@@ -18,5 +18,4 @@ public class Receipt {
     private Integer units;
     private Product product;
     private String date;
-
 }

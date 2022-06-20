@@ -1,5 +1,6 @@
 package com.example.HardwareStore.dto;
 
+import com.example.HardwareStore.collection.Product;
 import com.example.HardwareStore.collection.Provider;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,9 +12,8 @@ import lombok.Data;
 public class ReceiptDTO {
 
     private String id;
-    private Provider providers;
     private Integer units;
-    private String productId;
+    private Product product;
     private String date;
 
     public ReceiptDTO(){

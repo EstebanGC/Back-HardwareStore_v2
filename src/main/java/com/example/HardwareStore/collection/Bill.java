@@ -20,6 +20,6 @@ public class Bill {
     private String date;
     private String clientName;
     private String sellerName;
-    private Integer productsSold;
+    private List<Product> productsSold;
     private Integer totalSale;
 }
