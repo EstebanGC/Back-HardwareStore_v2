@@ -38,7 +38,7 @@ class CreateProductUseCaseTest {
         Product product = new Product(
                 "x",
                 "x",
-                4.2,
+                4,
                 "x",
                 1,
                 4,

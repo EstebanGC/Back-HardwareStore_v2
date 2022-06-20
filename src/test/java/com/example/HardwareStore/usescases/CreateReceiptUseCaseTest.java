@@ -39,7 +39,7 @@ class CreateReceiptUseCaseTest {
         Product product = new Product(
                 "a",
                 "a",
-                150.2,
+                150,
                 "a",
                 0,
                 0,
@@ -50,7 +50,7 @@ class CreateReceiptUseCaseTest {
         Product product1 = new Product(
                 "b",
                 "b",
-                150.2,
+                150,
                 "b",
                 0,
                 0,

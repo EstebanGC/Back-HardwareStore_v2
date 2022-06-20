@@ -19,7 +19,7 @@ public class UpdateProduct {
 
     @Bean
     public RouterFunction<ServerResponse> updateProductRouter(UpdateProductUseCase updateProductUseCase) {
-        return route(PUT("/delete/product/{id}").and(accept(MediaType.APPLICATION_JSON)),
+        return route(PUT("/update/product").and(accept(MediaType.APPLICATION_JSON)),
                 request -> request.bodyToMono(ProductDTO.class)
                         .flatMap(updateProductUseCase::putProduct)
                         .flatMap(productDTO -> ServerResponse.status(HttpStatus.ACCEPTED)

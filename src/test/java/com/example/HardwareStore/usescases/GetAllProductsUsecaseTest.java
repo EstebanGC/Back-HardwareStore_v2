@@ -52,7 +52,7 @@ public class GetAllProductsUsecaseTest {
         Product product = new Product (
                 "x",
                 "x",
-                4.2,
+                4,
                 "x",
                 2,
                 4,
@@ -64,7 +64,7 @@ public class GetAllProductsUsecaseTest {
         Product product1 = new Product(
                 "y",
                 "y",
-                3.5,
+                3 ,
                 "y",
                 2,
                 5,

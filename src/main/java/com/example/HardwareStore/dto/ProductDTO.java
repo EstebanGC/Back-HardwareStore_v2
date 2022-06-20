@@ -15,7 +15,7 @@ public class ProductDTO {
 
     private String id;
     private String productName;
-    private Double productPrice;
+    private Integer productPrice;
     private String productDescription;
     private Integer sold;
     private Integer minUnits;
